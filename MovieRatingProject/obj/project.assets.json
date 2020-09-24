@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\New Work\\MovieRatingProjectSolution\\MovieRatingProject\\MovieRatingProject.csproj",
+      "projectUniqueName": "C:\\New Work\\MovieRating\\MovieRatingProject\\MovieRatingProject.csproj",
       "projectName": "MovieRatingProject",
-      "projectPath": "C:\\New Work\\MovieRatingProjectSolution\\MovieRatingProject\\MovieRatingProject.csproj",
+      "projectPath": "C:\\New Work\\MovieRating\\MovieRatingProject\\MovieRatingProject.csproj",
       "packagesPath": "C:\\Users\\tiene\\.nuget\\packages\\",
-      "outputPath": "C:\\New Work\\MovieRatingProjectSolution\\MovieRatingProject\\obj\\",
+      "outputPath": "C:\\New Work\\MovieRating\\MovieRatingProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tiene\\AppData\\Roaming\\NuGet\\NuGet.Config",
