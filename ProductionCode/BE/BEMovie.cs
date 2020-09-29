@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ProductionCode.BEMovie
+namespace ProductionCode.BE
 {
     public class BEMovie
     {
-        public int Reviewer { get; set; }
         public int Movie { get; set; }
-        public int Grade { get; set; }
-        public DateTime Date { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public DateTime Year { get; set; }
+
+
+
     }
 }

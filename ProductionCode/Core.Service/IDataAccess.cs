@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ProductionCode.Core.Service
 {
-    interface IDataAccess
+    public interface IDataAccess
     {
         int GetNumberOfReviewsFromReviewer(int reviewer);
         double GetAverageRateFromReviewer(int reviewer);
