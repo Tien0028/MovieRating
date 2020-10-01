@@ -8,7 +8,7 @@ namespace ProductionCode.DataAccess
 {
     public class FakeRepository: IFakeRepository
     {
-        private static readonly IEnumerable<BERating> _bERatings;
+        private readonly IEnumerable<BERating> _bERatings;
 
         IEnumerable<BERating> IFakeRepository.GetAll()
         {

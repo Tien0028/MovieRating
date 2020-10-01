@@ -11,10 +11,17 @@ namespace ProductionCode.Core.Service
     public class DataAccess
     {
         private readonly List<BERating> _beRatings = new List<BERating>();
+        private IFakeRepository movieRep;
+        private IFakeRepository mRep;
 
         //private readonly List<BEReviewer> _beReviewer = new List<BEReviewer>();
         //private readonly List<BEMovie> _beMovie = new List<BEMovie>();
-        public DataAccess(IFakeRepository @object) { }
+        public DataAccess(IFakeRepository @object)
+        {
+
+            mRep = movieRep;
+
+        }
 
 
             public int GetNumberOfReviewsFromReviewer(int reviewer)

@@ -9,9 +9,12 @@ namespace TestProductionCode
 {
     public class Tests
     {
+
         [Test]
         public void Setup()
         {
+
+            
 
         }
 
@@ -30,6 +33,8 @@ namespace TestProductionCode
             int actualResult = mService.GetNumberOfReviewsFromReviewer(2);
 
             m.Verify(m => m.GetAll(), Times.Once);
+
+            
 
             Assert.IsTrue(actualResult == 1);
         }
