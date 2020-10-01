@@ -1,0 +1,4 @@
+C:\New Work\MovieRating\ProductionCode\obj\Debug\netcoreapp3.1\ProductionCode.csprojAssemblyReference.cache
+C:\New Work\MovieRating\ProductionCode\obj\Debug\netcoreapp3.1\ProductionCode.AssemblyInfoInputs.cache
+C:\New Work\MovieRating\ProductionCode\obj\Debug\netcoreapp3.1\ProductionCode.AssemblyInfo.cs
+C:\New Work\MovieRating\ProductionCode\obj\Debug\netcoreapp3.1\ProductionCode.csproj.CoreCompileInputs.cache

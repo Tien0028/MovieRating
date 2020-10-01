@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\New Work\\MovieRating\\MovieRating\\MovieRating.csproj": {}
+    "C:\\New Work\\MovieRating\\TestProductionCode\\TestProductionCode.csproj": {}
   },
   "projects": {
-    "C:\\New Work\\MovieRating\\MovieRating\\MovieRating.csproj": {
+    "C:\\New Work\\MovieRating\\TestProductionCode\\TestProductionCode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\New Work\\MovieRating\\MovieRating\\MovieRating.csproj",
-        "projectName": "MovieRating",
-        "projectPath": "C:\\New Work\\MovieRating\\MovieRating\\MovieRating.csproj",
+        "projectUniqueName": "C:\\New Work\\MovieRating\\TestProductionCode\\TestProductionCode.csproj",
+        "projectName": "TestProductionCode",
+        "projectPath": "C:\\New Work\\MovieRating\\TestProductionCode\\TestProductionCode.csproj",
         "packagesPath": "C:\\Users\\tiene\\.nuget\\packages\\",
-        "outputPath": "C:\\New Work\\MovieRating\\MovieRating\\obj\\",
+        "outputPath": "C:\\New Work\\MovieRating\\TestProductionCode\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tiene\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,6 +37,20 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.4.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.15.1, )"
+            },
+            "nunit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
