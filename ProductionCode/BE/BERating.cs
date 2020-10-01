@@ -6,9 +6,9 @@ namespace ProductionCode.BE
 {
     public class BERating
     {
-
-        public int ID { get; set; }
         public int Rate { get; set; }
+
+        public DateTime Date { get; set; }
 
     }
 }

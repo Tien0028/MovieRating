@@ -8,7 +8,6 @@ namespace ProductionCode.BE
     {
 
         public int Reviewer { get; set;}
-        public string Name { get; set; }
 
     }
 }
