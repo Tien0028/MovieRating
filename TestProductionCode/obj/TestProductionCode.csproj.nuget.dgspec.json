@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chris\\OneDrive\\Dokumente\\GitHub\\MovieRating\\TestProductionCode\\TestProductionCode.csproj": {}
+    "C:\\New Work\\MovieRating\\TestProductionCode\\TestProductionCode.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chris\\OneDrive\\Dokumente\\GitHub\\MovieRating\\ProductionCode\\ProductionCode.csproj": {
+    "C:\\New Work\\MovieRating\\ProductionCode\\ProductionCode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chris\\OneDrive\\Dokumente\\GitHub\\MovieRating\\ProductionCode\\ProductionCode.csproj",
+        "projectUniqueName": "C:\\New Work\\MovieRating\\ProductionCode\\ProductionCode.csproj",
         "projectName": "ProductionCode",
-        "projectPath": "C:\\Users\\chris\\OneDrive\\Dokumente\\GitHub\\MovieRating\\ProductionCode\\ProductionCode.csproj",
-        "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chris\\OneDrive\\Dokumente\\GitHub\\MovieRating\\ProductionCode\\obj\\",
+        "projectPath": "C:\\New Work\\MovieRating\\ProductionCode\\ProductionCode.csproj",
+        "packagesPath": "C:\\Users\\tiene\\.nuget\\packages\\",
+        "outputPath": "C:\\New Work\\MovieRating\\ProductionCode\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tiene\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,21 +58,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\chris\\OneDrive\\Dokumente\\GitHub\\MovieRating\\TestProductionCode\\TestProductionCode.csproj": {
+    "C:\\New Work\\MovieRating\\TestProductionCode\\TestProductionCode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chris\\OneDrive\\Dokumente\\GitHub\\MovieRating\\TestProductionCode\\TestProductionCode.csproj",
+        "projectUniqueName": "C:\\New Work\\MovieRating\\TestProductionCode\\TestProductionCode.csproj",
         "projectName": "TestProductionCode",
-        "projectPath": "C:\\Users\\chris\\OneDrive\\Dokumente\\GitHub\\MovieRating\\TestProductionCode\\TestProductionCode.csproj",
-        "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chris\\OneDrive\\Dokumente\\GitHub\\MovieRating\\TestProductionCode\\obj\\",
+        "projectPath": "C:\\New Work\\MovieRating\\TestProductionCode\\TestProductionCode.csproj",
+        "packagesPath": "C:\\Users\\tiene\\.nuget\\packages\\",
+        "outputPath": "C:\\New Work\\MovieRating\\TestProductionCode\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tiene\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,8 +85,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\chris\\OneDrive\\Dokumente\\GitHub\\MovieRating\\ProductionCode\\ProductionCode.csproj": {
-                "projectPath": "C:\\Users\\chris\\OneDrive\\Dokumente\\GitHub\\MovieRating\\ProductionCode\\ProductionCode.csproj"
+              "C:\\New Work\\MovieRating\\ProductionCode\\ProductionCode.csproj": {
+                "projectPath": "C:\\New Work\\MovieRating\\ProductionCode\\ProductionCode.csproj"
               }
             }
           }
@@ -136,7 +136,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

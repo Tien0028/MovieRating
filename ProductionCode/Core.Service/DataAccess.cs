@@ -14,8 +14,6 @@ namespace ProductionCode.Core.Service
         private IFakeRepository movieRep;
         private IFakeRepository mRep;
 
-        //private readonly List<BEReviewer> _beReviewer = new List<BEReviewer>();
-        //private readonly List<BEMovie> _beMovie = new List<BEMovie>();
         public DataAccess(IFakeRepository @object)
         {
 
@@ -64,20 +62,27 @@ namespace ProductionCode.Core.Service
             {
                 return _beRatings.GroupBy(mr => mr.Reviewer).OrderByDescending(mr => mr.Count()).Select(mr => mr.Key).ToList();
             }
-            public List<int> GetTopRatedMovies(int amount)
-            {
-                throw new Exception();
-            }
-            public List<int> GetTopMoviesByReviewer(int reviewer)
-            {
-                throw new Exception();
-            }
-            public List<int> GetReviewersByMovie(int movie)
-            {
-                throw new Exception();
-            }
-
-
+        public List<int> GetTopRatedMovies(int amount)
+        {
+            return _beRatings
+              .OrderByDescending(mr => mr.Rate)
+              .Select(mr => mr.Movie)
+              .Distinct()
+              .Take(amount)
+              .ToList();
+        }
+        public List<int> GetTopMoviesByReviewer(int reviewer)
+        {
+            return _beRatings.OrderByDescending(mr => mr.Reviewer == reviewer).Select(mr => mr.Movie).Distinct().ToList();
+        }
+        public List<BERating> GetReviewersByMovie(int movie)
+        {
+            return _beRatings.Where(mr => mr.Movie == movie).OrderByDescending(mr => mr.Rate).ThenByDescending(mr => mr.Date).ToList();
 
         }
+
+
+
+
     }
+}
