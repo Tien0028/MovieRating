@@ -1,22 +1,27 @@
 ﻿using ProductionCode.BE;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Xml.Schema;
 
 namespace ProductionCode.Core.Service
 {
+
     public class DataAccess
     {
+        private readonly List<BERating> _beRatings = new List<BERating>();
+        private readonly List<BEReviewer> _beReviewer = new List<BEReviewer>();
+        private readonly List<BEMovie> _beMovie = new List<BEMovie>();
         public DataAccess()
         {   
 
         }
-        static List<BERating> bERatings;
+
         public int GetNumberOfReviewsFromReviewer(int reviewer)
         {
 
-           
+            return _beReviewer.Where(mr => mr.Reviewer == reviewer).Count();
             
         }
 
