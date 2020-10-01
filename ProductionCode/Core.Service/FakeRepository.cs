@@ -7,7 +7,5 @@ namespace ProductionCode.DataAccess
     public class FakeRepository
     {
 
-
-
     }
 }
