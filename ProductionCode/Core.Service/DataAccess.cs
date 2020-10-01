@@ -13,7 +13,7 @@ namespace ProductionCode.Core.Service
         private readonly List<BERating> _beRatings = new List<BERating>();
         //private readonly List<BEReviewer> _beReviewer = new List<BEReviewer>();
         //private readonly List<BEMovie> _beMovie = new List<BEMovie>();
-        public DataAccess()
+        public DataAccess(IFakeRepository @object)
         {   
 
         }
