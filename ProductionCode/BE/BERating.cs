@@ -9,7 +9,8 @@ namespace ProductionCode.BE
         public int Movie { get; set; }
 
         public int Reviewer { get; set; }
-        public int Rate { get; set; }
+
+        public int Grade { get; set; }
 
         public DateTime Date { get; set; }
 

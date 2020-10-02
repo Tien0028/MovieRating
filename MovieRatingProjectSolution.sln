@@ -5,7 +5,12 @@ VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductionCode", "ProductionCode\ProductionCode.csproj", "{B17B4453-A330-4D79-B42D-A2990EE3AF33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestMovieRating", "XUnitTestMovieRating\XUnitTestMovieRating.csproj", "{E10F9358-FD0B-4257-BB5C-6DDD30041B65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTestMovieRating", "XUnitTestMovieRating\XUnitTestMovieRating.csproj", "{E10F9358-FD0B-4257-BB5C-6DDD30041B65}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{38DF8B1B-EC1E-4510-82A8-85A2C3ACF608}"
+	ProjectSection(SolutionItems) = preProject
+		XUnitTestMovieRating\bin\Debug\netcoreapp3.1\ratings.json = XUnitTestMovieRating\bin\Debug\netcoreapp3.1\ratings.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -10,27 +10,27 @@ namespace ProductionCode.MovieRating
 
         HashSet<BERating> Ratings { get; set; }
 
-        int NumberOfReviews(int rID); // GetNumberOfReviewsFromReviewer
+        int GetNumberOfReviewsFromReviewer(int rID); 
 
-        double AvgOfReviewer(int rID); //  GetAverageRateFromReviewer
+        double GetAverageRateFromReviewer(int rID); 
 
-        int GradeCountByID(int rID, int grade); // GetNumberOfRatesByReviewer
+        int GetNumberOfRatesByReviewer(int rID, int grade); 
 
-        int MovieReviewerCount(int mID); //  GetNumberOfReviews
+        int GetNumberOfReviews(int mID); 
 
-        double MovieReviewAvg(int mID); // GetAverageRateOfMovie
+        double GetAverageRateOfMovie(int mID); 
 
-        int MovieReviewByGrade(int mID, int grade);  //  GetNumberOfRates
+        int GetNumberOfRates(int mID, int grade); 
 
-        List<int> MovieMostTopRate(); //  GetMoviesWithHighestNumberOfTopRates
+        List<int> GetMoviesWithHighestNumberOfTopRates(); 
 
-        List<int> ReviewerTopCount(); // GetMostProductiveReviewers
+        List<int> GetMostProductiveReviewers();
 
-        List<int> TopMovies(int num); // GetTopRatedMovies
+        List<int> GetTopRatedMovies(int num); 
 
-        List<int> RevieverMovies(int rID);  //  GetTopMoviesByReviewer
+        List<int> GetTopMoviesByReviewer(int rID); 
 
-        List<int> MovieReviewers(int mID); // GetReviewersByMovie
+        List<int> GetReviewersByMovie(int mID); 
 
 
     }
