@@ -6,7 +6,7 @@ using System.Text;
 
 namespace ProductionCode.MovieRating
 {
-    public class MovieRating
+    public class MovieRating: IMovieRating
     {
 
         public HashSet<BERating> Ratings { get; set; }
@@ -91,7 +91,7 @@ namespace ProductionCode.MovieRating
 
         public List<int> TopMovies(int num)
         {
-            var res = Ratings.AsParallel().GroupBy(r => r.Movie).Select(result => new { mov = result.Key, avg = result.Average(m => m.Grade) });
+            var res = Ratings.AsParallel().GroupBy(r => r.Movie).Select(result => new { mov = result.Key, avg = result.Average(m => m.Rate) });
 
             var ordered = res.OrderByDescending(m => m.avg).Take(num).Select(m => m.mov).ToList();
             return ordered;
