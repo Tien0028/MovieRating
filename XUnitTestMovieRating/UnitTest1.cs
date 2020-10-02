@@ -1,7 +1,9 @@
 using Newtonsoft.Json;
 using ProductionCode.BE;
+using ProductionCode.MovieRating;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using Xunit;
@@ -57,5 +59,24 @@ namespace XUnitTestMovieRating
 
             return ratings;
         }
+
+        [Fact]
+        public void AvarageRatingPerformanceTest()
+        {
+
+            IMovieRating mr = new MovieRating
+            {
+                Ratings = firstTen
+            };
+
+            Stopwatch sw = new Stopwatch();
+            sw.Start();
+
+            mr.MovieReviewAvg(1488844);
+
+            sw.Stop();
+            Assert.True(sw.ElapsedMilliseconds < 4000);
+        }
+        #endregion
     }
 }
