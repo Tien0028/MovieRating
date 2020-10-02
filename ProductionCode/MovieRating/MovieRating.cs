@@ -11,6 +11,7 @@ namespace ProductionCode.MovieRating
 
         public HashSet<BERating> Ratings { get; set; }
 
+
         public double AvgOfReviewer(int rID)
         {
             double avg = Ratings.Where(x => x.Reviewer == rID).Average(x => x.Rate);
@@ -45,5 +46,63 @@ namespace ProductionCode.MovieRating
             return gradeCounter;
         }
 
+        public int MovieReviewerCount(int mID)
+        {
+            int count = Ratings.Where(x => x.Movie == mID).Count();
+            return count;
+        }
+
+        public int NumberOfReviews(int rID)
+        {
+            int count = Ratings.Where(x => x.Reviewer == rID).Count();
+            return count;
+        }
+
+        public List<int> RevieverMovies(int rID)
+        {
+            List<int> reviewerMovies = Ratings.Where(m => m.Reviewer == rID)
+                .OrderByDescending(m => m.Rate).ThenByDescending(m => m.Date)
+                .Select(m => m.Movie).ToList();
+
+            return reviewerMovies;
+        }
+
+        public List<int> ReviewerTopCount()
+        {
+            var reviewerCounted = Ratings.GroupBy(r => r.Reviewer).Select(g => g.Count()).ToList();
+            List<int> list = new List<int>();
+            int max = -1;
+            for (int i = 0; i < reviewerCounted.Count(); i++)
+            {
+                if (reviewerCounted[i] == max)
+                {
+                    list.Add(i + 1);
+                }
+
+                if (reviewerCounted[i] > max)
+                {
+                    list.Clear();
+                    max = reviewerCounted[i];
+                    list.Add(i + 1);
+                }
+            }
+            return list;
+        }
+
+        public List<int> TopMovies(int num)
+        {
+            var res = Ratings.AsParallel().GroupBy(r => r.Movie).Select(result => new { mov = result.Key, avg = result.Average(m => m.Grade) });
+
+            var ordered = res.OrderByDescending(m => m.avg).Take(num).Select(m => m.mov).ToList();
+            return ordered;
+        }
+
+        public List<int> MovieReviewers(int mID)
+        {
+            List<int> reviewers = Ratings.Where(r => r.Movie == mID)
+                .OrderByDescending(m => m.Rate).ThenByDescending(m => m.Date)
+                .Select(m => m.Reviewer).ToList();
+            return reviewers;
+        }
     }
 }

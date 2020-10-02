@@ -10,27 +10,27 @@ namespace ProductionCode.MovieRating
 
         HashSet<BERating> Ratings { get; set; }
 
-        int NumberOfReviews(int rID); // GetNumberOfReviewsFromReviewer
+        int GetNumberOfReviewsFromReviewer(int rID); // GetNumberOfReviewsFromReviewer
 
-        double AvgOfReviewer(int rID); //  GetAverageRateFromReviewer
+        double AGetAverageRateFromReviewervgOfReviewer(int rID); //  GetAverageRateFromReviewer
 
-        int GradeCountByID(int rID, int grade); // GetNumberOfRatesByReviewer
+        int GetNumberOfRatesByReviewer(int rID, int grade); // GetNumberOfRatesByReviewer
 
-        int MovieReviewerCount(int mID); //  GetNumberOfReviews
+        int GetNumberOfReviews(int mID); //  GetNumberOfReviews
 
-        double MovieReviewAvg(int mID); // GetAverageRateOfMovie
+        double GetAverageRateOfMovie(int mID); // GetAverageRateOfMovie
 
-        int MovieReviewByGrade(int mID, int grade);  //  GetNumberOfRates
+        int GetNumberOfRates(int mID, int grade);  //  GetNumberOfRates
 
-        List<int> MovieMostTopRate(); //  GetMoviesWithHighestNumberOfTopRates
+        List<int> GetMoviesWithHighestNumberOfTopRates(); //  GetMoviesWithHighestNumberOfTopRates
 
-        List<int> ReviewerTopCount(); // GetMostProductiveReviewers
+        List<int> GetMostProductiveReviewers(); // GetMostProductiveReviewers
 
-        List<int> TopMovies(int num); // GetTopRatedMovies
+        List<int> GetTopRatedMovies(int num); // GetTopRatedMovies
 
-        List<int> RevieverMovies(int rID);  //  GetTopMoviesByReviewer
+        List<int> GetTopMoviesByReviewer(int rID);  //  GetTopMoviesByReviewer
 
-        List<int> MovieReviewers(int mID); // GetReviewersByMovie
+        List<int> GetReviewersByMovie(int mID); // GetReviewersByMovie
 
 
     }
