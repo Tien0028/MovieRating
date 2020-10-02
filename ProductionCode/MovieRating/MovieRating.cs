@@ -12,26 +12,26 @@ namespace ProductionCode.MovieRating
         public HashSet<BERating> Ratings { get; set; }
 
 
-        public double AvgOfReviewer(int rID)
+        public double AvgOfReviewer(int rID) //  GetAverageRateFromReviewer
         {
             double avg = Ratings.Where(x => x.Reviewer == rID).Average(x => x.Rate);
             return avg;
         }
 
-        public int GradeCountByID(int rID, int grade)
+        public int GradeCountByID(int rID, int grade) // GetNumberOfRatesByReviewer
         {
             int count = Ratings.Where(x => x.Reviewer == rID && x.Rate == grade).Count();
             return count;
         }
 
-        public List<int> MovieMostTopRate()
+        public List<int> MovieMostTopRate() //  GetMoviesWithHighestNumberOfTopRates
         {
             var topRatedMoviesGrade = Ratings.Where(r => r.Rate == 5).Select(r => r.Movie).ToList();
 
             return topRatedMoviesGrade;
         }
 
-        public double MovieReviewAvg(int mID)
+        public double MovieReviewAvg(int mID) // GetAverageRateOfMovie
         {
             var averageRate = Ratings.Where(BERating => mID == BERating.Movie).Average(r => r.Rate);
 
@@ -39,7 +39,7 @@ namespace ProductionCode.MovieRating
 
         }
 
-        public int MovieReviewByGrade(int mID, int grade)
+        public int MovieReviewByGrade(int mID, int grade) //  GetNumberOfRates
         {
             var gradeCounter = Ratings.Where(BERating => mID == BERating.Movie && BERating.Rate == grade).Count();
 
