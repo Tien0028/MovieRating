@@ -382,7 +382,7 @@ namespace XUnitTestMovieRating
                 sw = Stopwatch.StartNew();
                 rating.GetTopRatedMovies(10);
                 sw.Stop();
-                Assert.True(sw.ElapsedMilliseconds <= 4000);
+                Assert.True(sw.ElapsedMilliseconds <= 60000);
             }
         }
 
